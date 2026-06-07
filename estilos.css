@@ -20,3 +20,27 @@
     box-sizing: border-box;
 }
 
+/* app emta*/ 
+.appemta{
+    background-image: url("imgemta/arqueros_fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*contacto*/
+#bodycontacto{
+    background-image: url("imgemta/arqueros_fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.datos h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    
+}
