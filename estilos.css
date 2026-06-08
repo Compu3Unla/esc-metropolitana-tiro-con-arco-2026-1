@@ -42,5 +42,44 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-style: italic;
-    
+
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+#infocontenedor{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    background: rgb(217, 217, 217, 0.5);
+    width: 50%;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+img{
+    border-radius: 50px;
+}
+
+.costado{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formulario textarea{
+    width: auto;
+    height: 230px;
+}
+
+.botonenviar{
+    padding: 45px 0px 0px;
+}
+
+.maincontacto{
+    display: flex;
+    justify-content: center;
 }
