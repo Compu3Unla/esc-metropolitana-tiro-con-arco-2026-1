@@ -44,3 +44,35 @@
     font-style: italic;
     
 }
+
+footer {
+    background-color: #212121;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p{
+        font-size: 0.8rem;
+        color: white;
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .bloque {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vh 12vh;
+        p {text-align: left;}
+    }
+    .info-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .redes {
+        display: flex;
+        gap: 20px;
+    }
+}
