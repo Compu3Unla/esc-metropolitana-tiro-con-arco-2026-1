@@ -11,28 +11,29 @@
     </style>
 </head>
 
-<body class="appemta">
+<body id="bodyfondo">
     <header>
         <nav>
             <a href="index.html">
-                <img src="imgemta/" alt="boton volver" width="" height="">
+                <img src="imgemta/botones/boton-inicio.svg" alt="boton para volver al inicio" width="" height="">
             </a>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="mainapp">
+        <section id="ingreso-app">
             <img src="imgemta/logo-app.svg" alt="logo de la app EMTA" width="" height="">
             <form method="post" action="" target="_blank" enctype="multipart/form-data">
                 <input type="text" name="dni" id="dni" placeholder="DNI" required>
                 <input type="password" name="pin" id="pin" placeholder="PIN" minlength="8" required>
-                <input type="submit">
+                <input type="submit" name="enviar" id="enviar" formenctype="multipart/form-data">
             </form>
-            <a>¿No tenés una cuenta?</a>
-            <a>Recuperar PIN</a>
+            <a href="#" target="_blank">¿No tenés una cuenta?</a>
+            <a href="#" target="_blank">Recuperar PIN</a>
         </section>
     </main>
 </body>
+
 <footer>
     <div class="bloque">
         <div class="info-footer">
@@ -45,11 +46,11 @@
         </div>
         <div class="redes">
             <a href="" target="_blank">
-                <img src="imgemta/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="imgemta/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="imgemta/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
         </div>
     </div>
     <p>© 2022 EMTA - Escuela Metropolitana de Tiro con Arco - Todos los Derechos Reservados</p>

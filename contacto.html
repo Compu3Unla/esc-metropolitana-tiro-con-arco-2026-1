@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +12,49 @@
     </style>
 </head>
 
-<body id="bodycontacto">
+<body id="bodyfondo">
     <header>
-        <section id="headcontenedor">
+        <nav>
             <a href="index.html">
-                <p>INICIO</p>
+                <img src="imgemta/botones/boton-inicio.svg" alt="boton para volver al inicio" width="" height="">
             </a>
-        </section>
+        </nav>
     </header>
 
-    <main class="maincontacto">
+    <main id="maincontacto">
         <section id="infocontenedor">
             <article class="datos">
                 <div>
-                    <h1>NÚMERO DE CONTACTO</h1>
+                    <h3>NÚMERO DE CONTACTO</h3>
                     <p>11-4973-2696</p>
                 </div>
 
                 <div>
-                    <h1>UBICACIÓN</h1>
+                    <h3>UBICACIÓN</h3>
                     <p>Av. Juan Bautista Justo 5450, CABA</p>
                 </div>
 
                 <a href="https://maps.app.goo.gl/DJ5uQwnxowHHSLb98">
-                    <img src="imgemta/mapa.jpg" alt="mapa de donde se escuentra la escuela de arco">
+                    <img src="imgemta/mapa.jpg" alt="mapa de donde se encuentra la escuela">
                 </a>
 
             </article>
 
-            <div class="costado">
-                <article class="formulario">
-                    <form method="post" target="_blank" enctype="text/plain">
-                        <label for="nombre">NOMBRE</label>
-                        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Mi nombre es...">
-
-                        <label for="mail">MAIL</label>
-                        <input type="text" name="mail" id="mail" maxlength="60" placeholder="Ej: emta@gmail.com">
-
-                        <label for="mensaje">MENSAJE</label>
-                        <textarea name="mensaje" id="mensaje" placeholder="Buen día..."></textarea>
-                    </form>
-                </article>
-            
-                <article class="botonenviar">
-                    <div>
-                        <p>ENVIAR</p>
-                    </div>
-                </article>
-            </div>
+            <form method="post" target="_blank" enctype="text/plain">
+                <div>
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Mi nombre es...">
+                </div>
+                <div>
+                    <label for="mail">MAIL</label>
+                    <input type="text" name="mail" id="mail" maxlength="60" placeholder="Ej: emta@gmail.com">
+                </div>
+                <div>
+                    <label for="mensaje">MENSAJE</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Buen día..."></textarea>
+                </div>
+                <input type="submit" name="enviar" id="enviar" formenctype="multipart/form-data" value="ENVIAR">
+            </form>
         </section>
     </main>
 </body>
@@ -75,15 +71,14 @@
         </div>
         <div class="redes">
             <a href="" target="_blank">
-                <img src="imgemta/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="imgemta/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="imgemta/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
+                <img src="imgemta/redes/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
         </div>
     </div>
     <p>© 2022 EMTA - Escuela Metropolitana de Tiro con Arco - Todos los Derechos Reservados</p>
 </footer>
-
 
 </html>
