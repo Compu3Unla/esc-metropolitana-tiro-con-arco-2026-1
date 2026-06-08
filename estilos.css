@@ -42,41 +42,48 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-style: italic;
-    
+
 }
 
-
-footer {
-    background-color: #212121;
-    height: 185px;
+.formulario form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    p{
-        font-size: 0.8rem;
-        color: white;
-        line-height: 1rem;
-        text-align: center;
-    }
-
-    .bloque {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0vh 12vh;
-        p {text-align: left;}
-    }
-    .info-footer {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .redes {
-        display: flex;
-        gap: 20px;
-    }
 }
+
+#infocontenedor{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    background: rgb(217, 217, 217, 0.5);
+    width: 50%;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+img{
+    border-radius: 50px;
+}
+
+.costado{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formulario textarea{
+    width: auto;
+    height: 230px;
+}
+
+.botonenviar{
+    padding: 45px 0px 0px;
+}
+
+.maincontacto{
+    display: flex;
+    justify-content: center;
+}
+    
 
 /*porqué elegirnos*/
 
