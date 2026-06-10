@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escuela Metropolitana de Tiro con Arco (EMTA)">
+    <meta name="keywords"
+        content="Escuela de Tiro con Arco, EMTA, portfolio, Arco, Flecha, Aprender, Escuela, Escuela de tiro">
     <title>Escuela Metropolitana de Tiro con Arco</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="" type="">
+    <link rel="icon" href="imgemta/favicon.svg" type="image/x-icon" width="80" height="80">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
     </style>
+
 </head>
 
 <body>
@@ -22,17 +26,19 @@
             <a href="app.html">APP EMTA</a>
         </nav>
 
-        <img id="logo-ppal" src="img/" alt="Logotipo EMTA" width="" height="" />
+        <img id="logo-ppal" src="imgemta/logotipo_am.svg" alt="Logotipo EMTA" width="790" height="257" />
         <h1>
             ESCUELA METROPOLITANA DE TIRO CON ARCO
         </h1>
     </header>
 
+
+
     <main>
         <section id="porque-emta">
             <h2>¿POR QUÉ NECESITAS ELEGIR EMTA?</h2>
 
-            <hr class="linea-porque-emta">
+            <hr class="linea-porque-emta"> <!-- esta linea se agrega visualmente en css -->
             <ul class="items-porque-emta">
                 <li> &gt Porque proporciona los conocimientos indispensables para abordar todas las
                     instancias de este deporte.</li>
@@ -49,11 +55,123 @@
             </ul>
         </section>
 
-        <figure class="flecha-arco-animados">
-            <img src="imgemta/arco-flecha-animados.svg" alt="animación de arco y flecha para separador" width="1200" height="334"/>
-</figure>
 
+
+        <figure class="flecha-arco-animados">
+            <!-- la flecha animada seria la imgenta/animacion2arcoyflecha como HOVER en CSS -->
+            <img src="imgemta/animacion1arcoyflecha.svg" alt="animación de arco y flecha para separador" width="1920"
+                height="334" />
+        </figure>
+
+
+
+        <div class="años-experiencia">
+            <h3>12 +</h3>
+            <h4>Años de experiencia</h4>
+        </div>
+
+        <div class="arqueros-activos">
+            <h3>200</h3>
+            <h4>Arqueros activos</h4>
+        </div>
+
+        <div class="medallas-ganadas">
+            <h3>40</h3>
+            <h4>Medallas ganadas</h4>
+        </div>
+
+        <details>
+            <summary>
+                <h3>04</h3>
+                <h4>Instructores Certificados</h4>
+            </summary>
+
+            <hr class="linea-division-instructores"> <!-- esta linea se agrega visualmente en css -->
+
+            <div>
+                <ul class="instructores-desplegable">
+                    <li>Marcelo Farias</li>
+                </ul>
+                <p>Ex tirador de la Selección Nacional</p>
+            </div>
+
+            <hr class="linea-division-instructores"> <!-- esta linea se agrega visualmente en css -->
+
+            <div>
+                <ul class="instructores-desplegable">
+                    <li>Cynthia Mitchell</li>
+                </ul>
+                <p>Tiradora de la Selección Nacional (Arco Compuesto)</p>
+            </div>
+
+            <hr class="linea-division-instructores"> <!-- esta linea se agrega visualmente en css -->
+
+            <div>
+                <ul class="instructores-desplegable">
+                    <li>Morena Farías</li>
+                </ul>
+                <p>Instructora infantil del Gobierno de la Ciudad</p>
+            </div>
+
+            <hr class="linea-division-instructores"> <!-- esta linea se agrega visualmente en css -->
+
+            <div>
+                <ul class="instructores-desplegable">
+                    <li>Javier Clusellas</li>
+                </ul>
+                <p>Instructor y juez de FATARCO</p>
+            </div>
+
+        </details>
+
+        <section>
+            <h3>MAS QUE UN CLUB, SOMOS UNA COMUNIDAD</h3>
+
+            <article>
+                <div class="contenedor-video">
+                    <video id="video-masqueunclub" width="474" height="601" poster="imgemta/boton-video-am.jpg">
+                        <source src="video/video-masqueunclub.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+
+                <div>
+                    <h4>CLASES DINÁMICAS</h4>
+                    <p>Promovemos un espacio activo donde no solo escuchás, sino que participás, preguntás y ponés en
+                        práctica cada concepto en tiempo real, haciendo el aprendizaje mucho más efectivo.</p>
+                </div>
+
+                <div>
+                    <h4>CONTENIDO PRÁCTICO Y ACTUALIZADO</h4>
+                    <p>Trabajamos con ejemplos reales y herramientas actuales, para que lo que aprendas sirva en
+                        situaciones concretas y no sea solo teórico.</p>
+                </div>
+
+                <div>
+                    <h4>ACOMPAÑAMIENTO PERSONALIZADO</h4>
+                    <p>Cada proceso es distinto por eso brindamos seguimiento cercano, resolviendo dudas y adaptándonos
+                        a tu ritmo para que puedas avanzar con confianza en el proceso de aprendizaje.</p>
+                </div>
+
+                <div>
+                    <h4>ADULTOS</h4>
+                    <h4>NIÑOS +8 AÑOS</h4>
+                    <h4>6 NIVELES</h4>
+                </div>
+            </article>
+        </section>
     </main>
+
+    <script>
+        const miVideo = document.getElementById('video-masqueunclub');
+
+        miVideo.addEventListener('click', function () {
+            if (miVideo.paused) {
+                miVideo.play();
+                miVideo.controls = true;
+            }
+        });
+    </script>
 </body>
 
 <footer>
@@ -68,11 +186,11 @@
         </div>
         <div class="redes">
             <a href="" target="_blank">
-                <img src="img EMTA/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
+                <img src="imgemta/fb.svg" alt="link al facebook de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="img EMTA/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
+                <img src="imgemta/yt.svg" alt="link al youtube de EMTA" width="50" height="50"></a>
             <a href="" target="_blank">
-                <img src="img EMTA/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
+                <img src="imgemta/ig.svg" alt="link al instagram de EMTA" width="50" height="50"></a>
         </div>
     </div>
     <p>© 2022 EMTA - Escuela Metropolitana de Tiro con Arco - Todos los Derechos Reservados</p>
