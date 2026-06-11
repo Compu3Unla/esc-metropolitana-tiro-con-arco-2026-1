@@ -216,7 +216,6 @@ figure img {
     min-height: 100vh;
 }
 
-
 /** instructores **/
 #instructores {
     display: flex;
@@ -256,6 +255,7 @@ figure img {
         width: 25%;
     }
 }
+
 
 /** CONTACTO Y APP **/
 #bodyfondo {
