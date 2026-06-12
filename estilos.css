@@ -79,8 +79,9 @@ h2 {
 
 h3 {
     font-family: 'Nunito Sans', sans-serif;
-    font-variation-settings: "wdth" 700;
+    font-variation-settings: "wdth" 800;
     font-style: italic;
+    font-size: 1.3rem;
 }
 
 li {
@@ -123,6 +124,10 @@ footer {
         display: flex;
         gap: 20px;
         img { border-radius: 0px;}
+    }
+    
+    a:hover {
+        filter: brightness(80%);
     }
 }
 
@@ -220,6 +225,34 @@ figure img {
     details {
         background-color: #FECA11;
         width: 25%;
+    }
+}
+
+/* nosotros */
+#nosotros {
+    margin: 15vh;
+
+    h2 {
+        text-align: center;
+    }
+
+    article {
+        margin: 10vh;
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .info-nosotros {
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .keywords {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
