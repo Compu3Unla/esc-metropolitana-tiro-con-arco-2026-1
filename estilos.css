@@ -82,6 +82,7 @@ h3 {
     font-variation-settings: "wdth" 800;
     font-style: italic;
     font-size: 1.3rem;
+    line-height: 3.5rem;
 }
 
 li {
@@ -256,6 +257,96 @@ figure img {
     .keywords {
         display: flex;
         justify-content: space-evenly;
+    }
+}
+
+/** actividades **/
+#actividades {
+    margin-top: 5vh;
+    details {
+        width: 100%;
+    }
+    .martes,.jueves,.viernes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh;
+        width: 100%;
+        gap: 20px;
+
+        h3 {
+            padding: 0px 30px;
+            border-radius: 30px;
+        }
+    }
+
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5vh;
+
+        .info-actividades {
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    .abierto-martes, .abierto-jueves, .abierto-viernes {
+        border-radius: 0px 0px 50px 50px;
+    }
+
+    .martes, .abierto-martes {
+        background-color: #FECA11;
+    }
+    .martes {
+        border-radius: 50px 50px 0px 0px;
+        h3 {
+            background-color: #181717;
+            color: white;
+        }
+    }
+
+    .jueves, .abierto-jueves {
+        background-color: #212121;
+        h2, p {
+            color: white;
+        }
+    }
+    .jueves {
+        h2 {
+            color: white;
+        }
+        h3 {
+            background-color: #FECA11;
+        }
+    }
+    .abierto-jueves {
+        h3 {
+            color: white;
+        }
+    }
+
+    .viernes, .abierto-viernes {
+        background-color: #484848;
+        h2, p {
+            color: white;
+        }
+    }
+    .viernes {
+        h2 {
+            color: white;
+        }
+        h3 {
+            background-color: #212121;
+            color: white;
+        }
+    }
+    .abierto-viernes {
+        h3 {
+            color: white;
+        }
     }
 }
 
