@@ -125,7 +125,7 @@ footer {
         gap: 20px;
         img { border-radius: 0px;}
     }
-    
+
     a:hover {
         filter: brightness(80%);
     }
@@ -225,6 +225,9 @@ figure img {
     details {
         background-color: #FECA11;
         width: 25%;
+        h2, h3 {
+            color: black;
+        }
     }
 }
 
