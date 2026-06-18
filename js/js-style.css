@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* --- Contenedor Principal de la Sección --- */
+
 .seccion-galeria {
     position: relative;
     width: 100%;
@@ -14,7 +14,7 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Corta los extremos que sobresalen de la pantalla */
+    overflow: hidden; 
 }
 
 /* CÍRCULO FIJO DE FONDO */
@@ -33,7 +33,6 @@
     pointer-events: none; 
 }
 
-/* Contenedor intermedio */
 .container {
     position: relative; 
     z-index: 2;
@@ -53,31 +52,30 @@
     overflow: visible; 
 }
 
-/* SOLUCIÓN DE RAÍZ: Estructura fija de 5 columnas usando CSS Grid */
+
 .cards__container {
     display: grid;
-    /* Crea 5 columnas: las extremas desbordan, las intermedias miden 415px y la central 594px */
     grid-template-columns: 200px 415px 594px 415px 200px;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem; /* Separación fija entre tarjetas */
+    gap: 2.5rem; 
     height: 600px; 
     position: relative;
     width: auto;
     list-style: none;
 }
 
-/* --- Estilos base de las Tarjetas (Box) --- */
+
 .box {
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15); 
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px; /* Bordes redondeados idénticos a tu Figma */
+    border-radius: 40px; 
     overflow: hidden;    
     transition: all 0.4s ease;
-    width: 100% !important; /* Fuerza a tomar el tamaño exacto asignado por la columna de Grid */
+    width: 100% !important; 
     height: 100% !important;
 }
 
@@ -89,17 +87,15 @@
     display: block;
 }
 
-/* 1. EXTREMO IZQUIERDO (Columna 1): Más chica y cortada */
+
 .box:nth-child(1) {
     grid-column: 1;
     height: 340px !important;
     opacity: 0.4;
     z-index: 3;
-    /* La desplazamos hacia la izquierda para que el borde del navegador la corte a la mitad */
     transform: translateX(-120px); 
 }
 
-/* 2. INTERMEDIA IZQUIERDA (Columna 2): Medida Figma 413px de alto */
 .box:nth-child(2) {
     grid-column: 2;
     height: 413px !important;
@@ -107,7 +103,6 @@
     z-index: 5;
 }
 
-/* 3. TARJETA CENTRAL (Columna 3): Grande y destacada (594px) */
 .box:nth-child(3) {
     grid-column: 3;
     height: 594px !important;
@@ -115,7 +110,7 @@
     opacity: 1;
 }
 
-/* 4. INTERMEDIA DERECHA (Columna 4): Medida Figma 413px de alto */
+
 .box:nth-child(4) {
     grid-column: 4;
     height: 413px !important;
@@ -123,23 +118,19 @@
     z-index: 5;
 }
 
-/* 5. EXTREMO DERECHO (Columna 5): Más chica y cortada */
 .box:nth-child(5) {
     grid-column: 5;
     height: 340px !important;
     opacity: 0.4;
     z-index: 3;
-    /* La desplazamos hacia la derecha para que el borde del navegador la corte a la mitad */
     transform: translateX(120px);
 }
 
-/* Oculta de forma estricta a partir de la sexta foto para que no rompa el diseño */
 .box.box--hide, 
 .cards__container .box:nth-child(n+6) {
     display: none !important;
 }
 
-/* --- BOTONES DE NAVEGACIÓN (FLECHAS) --- */
 .button {
     font-size: 5rem;
     color: #FFE588; 
@@ -149,7 +140,7 @@
     position: absolute; 
     top: 50%;
     transform: translateY(-50%);
-    z-index: 150; /* Por encima de las fotos cortadas */
+    z-index: 150; 
     display: flex;
     justify-content: center;
     align-items: center;
