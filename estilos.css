@@ -97,13 +97,6 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
 
-    p {
-        font-size: 0.8rem;
-        color: white;
-        line-height: 1rem;
-        text-align: center;
-    }
-
     .bloque {
         display: flex;
         flex-direction: row;
@@ -134,6 +127,13 @@ footer {
     a:hover {
         filter: brightness(80%);
     }
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: white;
+    line-height: 1rem;
+    text-align: center;
 }
 
 img {
@@ -413,6 +413,11 @@ figure img {
     justify-content: center;
 }
 
+#mainapp{
+    flex: 1;
+}
+
+
 #infocontenedor,
 #ingreso-app {
     background: rgb(217, 217, 217, 0.8);
@@ -688,16 +693,25 @@ form {
         line-height: 1.5rem;
     }
 
-    fOoter .bloque {
+    footer .bloque {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
 
+    footer {
+    height: auto;
+    padding: 20px 0;
+    }
     .info-footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .info-footer img {
+    max-width: 100%;
+    height: auto;
     }
 
     .redes {
@@ -713,6 +727,12 @@ form {
         height: auto;
     }
 
+    #bodyfondo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
     /* Contenedores principales */
     #infocontenedor,
     #ingreso-app {
@@ -721,6 +741,16 @@ form {
         border-radius: 30px;
     }
 
+    #ingreso-app form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    }
+
+    #ingreso-app input {
+        width: 100%;
+        max-width: none;
+    }
     /* contacto */
     #infocontenedor {
         flex-direction: column;
