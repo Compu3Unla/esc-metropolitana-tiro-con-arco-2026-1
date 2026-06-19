@@ -816,6 +816,11 @@ form {
         max-width: 100%;
     }
 
+.arcoyflecha{
+    display:none
+}
+
+
     /*instructores*/
     #instructores {
         flex-direction: column;
